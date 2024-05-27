@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resident Evil IV</title>
+
+    <!-- Favicon --> <link rel="icon" type="image/x-icon" href="IMAGES/Umbrella-Corp.png">
+    <!-- CSS Source --> <link rel="stylesheet" href="Index Style copy.css">
 </head>
 <body>
-    <h1>Hello</h1>
+    <!-- SECTION 01: Navigation Menu -->
+    <nav id="navbar">
+        <div id="nav-links">
+            <a href="#">About</a>
+            <a href="#">Gameplay</a>
+            <a href="#">Characters</a>
+            <a href="#">Story</a>
+            </div> 
+    </nav>
+    
+    <!-- SECTION 02: Introductory Section -->
+    <section id="hero">        
+        <div id="parallax-wrapper">
+            <div id="parallax-bg-1" data-speed="0.2"></div>
+            <div id="parallax-bg-2" data-speed="2"></div>
+            <div id="parallax-bg-3" data-speed="4"></div>
+            <div id="parallax-bg-4" data-speed="6"></div>
+            <div id="parallax-bg-5" data-speed="10"></div>        
+        </div>
+    </section>
+
+    <section id="title-page">
+        <div class="captions">
+            <h3 class="tagline">
+                Survive the Horrors, Master the Fear.
+            </h3>
+
+            <h1 class="title"><span class="highlight">R
+            </span>ESIDENT <span class="highlight">E</span>VIL 4</h1>
+        </div>
+    </section>
+ 
+    <!-- JS Sources -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> <!--GSAP: a popular JS library for creating animations for the web-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> <!--LENIS-->
+
+    <script src="Index.js"></script>
 </body>
 </html>
