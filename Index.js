@@ -13,6 +13,16 @@ gsap.ticker.add((time)=>{ // Updates Lenis for each frame of animation
 
 gsap.ticker.lagSmoothing(0) // Sets the lag smoothing of GSAP's ticker to 0
 
+// Learn More button
+document.addEventListener('DOMContentLoaded', (event) => {
+    const scrollButton = document.querySelector('.scroll-button');
+
+    scrollButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        gsap.to(window, {duration: 1, scrollTo: "#section02"});
+    });
+});
+
 // Navigation Menu
 function showSidebar(){
     const sidebar = document.querySelector('.side-nav')
@@ -26,7 +36,7 @@ function hideSidebar(){
 // Enable Sticky Navigation Menu
 window.onscroll = function() {StickyNav()};
 
-var navbar = document.querySelector(".navbar");
+var navbar = document.querySelector("#navbar");
 var sticky = navbar.offsetTop;
 
 function StickyNav(){
@@ -57,3 +67,4 @@ parallaxBG.forEach(bg => { // Iterates over each element in parallaxBG based on 
         duration: 2
     }, 0)
 })
+

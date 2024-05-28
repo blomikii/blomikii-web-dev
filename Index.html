@@ -3,69 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adorable Home |  Home</title>
+    <title>Adorable Home | Home</title>
+    
+    <!-- CSS Source --> <link rel="stylesheet" href="Index.css">
+    <!-- Favicon Source --> <link rel="shortcut icon" href="IMAGES/Favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="Index.css">
-    <link rel="shortcut icon" href="IMAGES/Favicon.png" type="image/x-icon">
+    <!-- Fontawesome Icons --> <script src="https://kit.fontawesome.com/92a5784cc1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <!-- NAVIGATION MENU -->
-    <nav class="navbar">
-        <!-- Closed Navigation -->
-        <ul class="side-nav">
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#DD1155"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Meet</a></li>
-            <li><a href="#">Contact</a></li>
+    <nav id="navbar">
+        <ul class="nav-links left-links"> <!-- Two classes were assigned to differentiate the left links and right links -->
+            <li><a href="#section1" class="active-link">Home</a></li> <!-- Active Link -->
+            <li><a href="#section2">Play</a></li>
+            <li><a href="#section3">Explore</a></li>
         </ul>
-        <!-- Open Navigation -->
-        <ul class="nav-links">
-            <li class="logo"><a href="https://hyperbeard.com/">HypeBeard Games</a></li> <!-- This is a link to the developer's site -->
-            <li class="hideOnMobile"><a href="#">Home</a></li>
-            <li class="hideOnMobile"><a href="#">About</a></li>
-            <li class="hideOnMobile"><a href="#">Explore</a></li>
-            <li class="hideOnMobile"><a href="#">Meet</a></li>
-            <li class="hideOnMobile"><a href="#">Contact</a></li>
-            <li class="menu-btn" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#DD1155"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        <div class="logo">
+            <a href="https://hyperbeard.com/game/adorable-home/"><img src="IMAGES/AH Logo.png" alt="Adorable Home Logo"></a>
+        </div>
+        <ul class="nav-links right-links">
+            <li><a href="#section4">Meet</a></li>
+            <li><a href="#section5">Gallery</a></li>
+            <li><a href="#section6">Contact</a></li>
         </ul>
     </nav>
 
     <!-- SECTION 01 -->
-    <section class="welcome">
-        <div class="left-side">
-            <img src="IMAGES/AH Logo.png" alt="">
-            <p>Step into a world where you can adopt adorable pets, decorate your dream home, and create cherished memories with your loved ones!</p>
+    <section id="title_01">
+        <div id="hero">   
+            <div class="caption">
+                <p>Building Memories, One Cute Corner at a Time!</p>
 
-            <div class="download-links">
-                <a href="https://play.google.com/store/apps/details?id=com.hyperbeard.adorablehome&pli=1" class="download-link"><img src="IMAGES/Google Play Download.png" alt=""></a>
-                <a href="https://apps.apple.com/us/app/adorable-home/id1486637414" class="download-link"><img src="IMAGES/App Store Download.png" alt=""></a>
+                <a href="#section02" class="scroll-button">Learn More</a>
+            </div>     
+
+            <div id="parallax-wrapper">
+                <div id="parallax-bg-1" data-speed="0.2"></div>
+                <div id="parallax-bg-2" data-speed="2"></div>
+                <div id="parallax-bg-3" data-speed="2"></div>
+                <div id="parallax-bg-4" data-speed="4"></div>  
             </div>
         </div>
-        <div class="right-side">
-            <img src="IMAGES/Couple and House.png" alt="Adorable Home Screenshot 1">
-        </div>
-    </section>
-    
-    <!-- SECTION 02 -->
-    <section class="spacer-1">
-        
     </section>
 
+    <section class="spacer">
+    </section>
+
+    <!-- SECTION 02 -->
+    <section class="trailer-section" id="section02">
+        <h1>Game Trailer</h1>
+        <div class="container">
+            <div class="trailer-container">
+                <div class="video-container">
+                    <video autoplay muted loop>
+                        <source src="IMAGES/Adorable Home Trailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="caption-container">
+                    <h2>Look's like you've just moved in...</h2>
+                    <p>Step into a world where you can adopt adorable pets, decorate your dream home, and create cherished memories with your loved ones!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- SECTION 03 -->
-    
-    
+    <section class="features">
+        <div class="text-container">
+            <h3>Curious on what awaits?</h3>
+            <h1>Explore the Game's Features</h1>
+        </div>
+        <div class="wrapper">
+            <div class="card">
+                <img src="IMAGES/Moving In.webp" alt="Moving In">
+                <div class="caption-info">
+                    <h1>Hello, welcome home!</h1>
+                    <p>What an exciting new chapter for you and your partner! Customize each room to reflect your style and create a warm space for everyone.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="IMAGES/Snow Start.webp" alt="Moving In">
+                <div class="caption-info">
+                    <h1>Adopt lovable pets!</h1>
+                    <p>Your furry companion, Snow, might like some new friends. Fill your home with love by adopting quirky cats to add joy and excitement to your daily life.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="IMAGES/Moving in 02.jpg " alt="Moving In">
+                <div class="caption-info">
+                    <h1>What are you waiting for?</h1>
+                    <p>Its time to settle down in your new home. Capture and collect beautiful memories as you cook meals, farm in your garden, and decorate your dream home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
-    <!-- <footer class="footer">
-    </footer> -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo-heading">
+                <img src="IMAGES/Logo.png" alt="Adorable Home Logo" class="footer-logo">
+            </div>
+            <div class="about-us">
+                <p>HyperBeard, Mexico's largest mobile game developer, has over 200 million global downloads. Their inclusive and creative games offer fun, charming, and wholesome experiences for all players.</p>
+            </div>
+            <hr>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 HyperBeard Games. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
     
-    <!-- JS Sources -->
+
+    <!-- JS Script Sources -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> <!--GSAP: a popular JS library for creating animations for the web-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    
+
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> <!--LENIS-->
   
     <script src="Index.js"></script>
+
 </body>
 </html>
