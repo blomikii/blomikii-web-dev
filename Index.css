@@ -52,8 +52,6 @@ body{
 }
 
 .nav-links li .active-link{ /* Styling for the active link */
-    font-family: 'Pangolin', sans-serif;
-    margin: 0 15px;
     color: #0E1C36;
 }
 
