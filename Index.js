@@ -23,16 +23,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-// Navigation Menu
-function showSidebar(){
-    const sidebar = document.querySelector('.side-nav')
-    sidebar.style.display = 'flex'
-}
-function hideSidebar(){
-    const sidebar = document.querySelector('.side-nav')
-    sidebar.style.display = 'none'
-}
-
 // Enable Sticky Navigation Menu
 window.onscroll = function() {StickyNav()};
 
