@@ -30,6 +30,7 @@ body{
     width: 100%;
     padding: 10px 20px;
     z-index: 2000;
+    transition: top 0.3s;
 }
 
 .nav-links{
@@ -76,18 +77,12 @@ body{
 }
 
 .logo img{
-    height: 40px; 
+    height: 25px; 
     transition: filter 0.3s;
 }
 
 .logo img:hover{
     filter: drop-shadow(0.35rem 0.35rem 0.35rem rgb(255, 213, 108)); 
-}
-
-/* For JS to enable the sticky effect on the navbar*/
-.sticky{
-    position: sticky;
-    top: 0;
 }
 
 /* SECTION 01 */

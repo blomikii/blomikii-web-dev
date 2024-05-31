@@ -13,6 +13,19 @@ gsap.ticker.add((time)=>{ // Updates Lenis for each frame of animation
 
 gsap.ticker.lagSmoothing(0) // Sets the lag smoothing of GSAP's ticker to 0
 
+// Hide Navbar On Scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+
+}
+
 // Learn More button
 document.addEventListener('DOMContentLoaded', (event) => {
     const scrollButton = document.querySelector('.scroll-button');
@@ -22,20 +35,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         gsap.to(window, {duration: 1, scrollTo: "#section02"});
     });
 });
-
-// Enable Sticky Navigation Menu
-window.onscroll = function() {StickyNav()};
-
-var navbar = document.querySelector("#navbar");
-var sticky = navbar.offsetTop;
-
-function StickyNav(){
-    if (window.scrollY >=sticky){
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
 
 // Parallax Effect
 const parallaxWrapper = document.querySelector('#parallax-wrapper') // Retrieves the parallax-wrapper ID

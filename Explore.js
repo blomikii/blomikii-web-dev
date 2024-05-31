@@ -13,18 +13,17 @@ gsap.ticker.add((time)=>{ // Updates Lenis for each frame of animation
 
 gsap.ticker.lagSmoothing(0) // Sets the lag smoothing of GSAP's ticker to 0
 
-// Enable Sticky Navigation Menu
-window.onscroll = function() {StickyNav()};
+// Hide Navbar On Scroll
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
 
-var navbar = document.querySelector("#navbar");
-var sticky = navbar.offsetTop;
-
-function StickyNav(){
-    if (window.scrollY >=sticky){
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
 }
 
 // Background Slider
