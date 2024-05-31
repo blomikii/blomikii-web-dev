@@ -12,9 +12,9 @@ body{
     margin: 0;
     padding: 0;
     background: url(IMAGES/Paw\ Print\ BG.png);
+    background-color: #FFFFFF;
 }
 
-/* NAVIGATION MENU */
 /* NAVIGATION MENU */
 #navbar{
     position: fixed;
@@ -86,6 +86,110 @@ body{
     filter: drop-shadow(0.35rem 0.35rem 0.35rem rgb(255, 213, 108)); 
 }
 
+/* GALLERY */
+.gallery-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.slider{
+    height: 150px;
+    top: 35px;
+    position: relative;
+    width: 100%;
+    place-items: center;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 14);
+    animation: scroll 100s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*7));
+    }
+}
+
+.slide {
+    height: 150px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15px;
+    perspective: 100px;
+}
+
+.slide img {
+    width: 100%;    
+    transition: 0.5s;
+}
+
+.slide img:hover {
+    transform: translateZ(10px);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 700px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom{
+    from {transform: scale(0)}
+    to {transform:(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* FOOTER */
 footer {
