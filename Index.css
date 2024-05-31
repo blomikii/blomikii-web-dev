@@ -1,6 +1,11 @@
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&family=Outfit:wght@100..900&family=Pangolin&family=Righteous&family=Rubik+Bubbles&family=Tenor+Sans&display=swap');
 
+@font-face {
+    font-family: 'Gomarice';
+    src: url(FONTS/gomarice_gogono_cocoa_mochi.ttf);
+}
+
 /* Configuring browser settings */
 *{
     margin: 0;
@@ -12,6 +17,16 @@ body{
     margin: 0;
     padding: 0;
     background: url(IMAGES/Paw\ Print\ BG.png);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(225,239,246);
+    background: linear-gradient(0deg, rgba(225,239,246,1) 0%, rgba(236,203,217,1) 17%, rgba(151,210,251,1) 35%, rgba(254,240,134,1) 53%, rgba(255,255,255,1) 84%);
+    border-radius: 5px;
 }
 
 /* NAVIGATION MENU */
@@ -173,20 +188,19 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
 
 /* SECTION 02 */
 .trailer-section{
-    border-top: 30px solid transparent; /* Set transparent border */
-    border-image: linear-gradient(0.25turn, #fffffe, #de8069, #de8069, #fffffe) 1; /* Set gradient border */    padding: 60px 0;
+    padding: 60px 0;
     background: url(IMAGES/Paw\ Print\ BG.png);
     height: 100dvh;
 }
 
 .trailer-section h1{
-    font-family: 'Rubik Bubbles', sans-serif;
+    font-family: 'Gomarice', sans-serif;
     font-size: 4em;
     font-weight: 100;
     color: #ffffff;
 
     text-transform: uppercase;
-    text-shadow: 1px 1px 10px rgba(188, 57, 8, 1);
+    text-shadow: 1px 1px 8px rgba(188, 57, 8, 1);
     
     margin-top: 20px;
     text-align: center;

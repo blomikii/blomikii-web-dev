@@ -21,6 +21,16 @@ body{
     background-repeat: no-repeat;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(225,239,246);
+    background: linear-gradient(0deg, rgba(225,239,246,1) 0%, rgba(236,203,217,1) 17%, rgba(151,210,251,1) 35%, rgba(254,240,134,1) 53%, rgba(255,255,255,1) 84%);
+    border-radius: 5px;
+}
+
 /* NAVIGATION MENU */
 #navbar{
     position: fixed;
@@ -292,6 +302,7 @@ form{
     font-family: 'Pangolin', sans-serif;
     text-align: justify;
     margin: 1.5rem 0 2rem 0;
+    line-height: 25px;
     color: #3423A6;
 }
 
