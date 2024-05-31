@@ -6,6 +6,7 @@
     src: url(FONTS/gomarice_gogono_cocoa_mochi.ttf);
 }
 
+
 /* Configuring browser settings */
 *{
     margin: 0;
@@ -204,14 +205,13 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     
     margin-top: 20px;
     text-align: center;
-
 }
 
 .container{
     max-width: 1200px;
     margin: 75px auto;
     border-radius: 35px;
-    background-color: #FFFFFF;
+    background-color: #;
 }
 
 .trailer-container{
@@ -245,13 +245,13 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
 }
 
 .caption-container h2{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Gomarice', sans-serif;
     font-size: 2em;
     font-weight: 100;
 
     text-align: center;
     margin: 0 40px 40px 40px;
-    color: #BC3908;
+    color: #ce7c65;
 }
 
 .caption-container p{
@@ -280,19 +280,19 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     position: absolute;
     z-index: 5;
     text-align: center;
-    margin-top: -300px;
+    margin-top: -350px;
     margin-bottom: 80px; 
 }
 
 .text-container h3{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Pangolin', sans-serif;
     font-size: 1.5em;
     color: #BC3908;
     margin-bottom: 10px; 
 }
 
 .text-container h1{
-    font-family: 'Rubik Bubbles', sans-serif;
+    font-family: 'Gomarice', sans-serif;
     text-transform: uppercase;
     font-weight: 100;
     font-size: 2.5em;
@@ -320,7 +320,7 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
 }
 
 .card:hover {
-    transform: translateY(20px);
+    transform: scale(1.05);
 }
 
 .card img {

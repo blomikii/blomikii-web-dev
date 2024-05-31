@@ -6,6 +6,11 @@
     src: url(FONTS/Star\ Cartoon.otf);
 }
 
+@font-face {
+    font-family: 'Gomarice';
+    src: url(FONTS/gomarice_gogono_cocoa_mochi.ttf);
+}
+
 /* Configuring browser settings */
 *{
     margin: 0;
@@ -17,7 +22,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(IMAGES/Cats\ Peeking.png);
-    background-color: #fff4d5;
+    background-color: #fffdf7;
     background-repeat: no-repeat;
 }
 
@@ -165,7 +170,7 @@ form{
 
 .title{
     color: #BC3908;
-    font-family: 'Star Cartoon', sans-serif;
+    font-family: 'Gomarice', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     line-height: 1;
@@ -206,7 +211,7 @@ form{
     left: 15px;
     transform: translateY(-50%);
     padding: 0 0.4rem;
-    color: #BC3908;
+    color: #3423A6;
     font-size: 0.9rem;
     font-weight: 400;
     pointer-events: none;
@@ -234,7 +239,7 @@ form{
 
 .btn:hover{
     background-color: transparent;
-    color: #BC3908;
+    color: #3423A6;
 }
 
 .input-container {
