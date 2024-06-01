@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS Source --> <link rel="stylesheet" href="Index-2.css">
+    <!-- Favicon Source --> <link rel="shortcut icon" href="IMAGES/Favicon.png" type="image/x-icon">
+
+    <!-- Fontawesome Icons --> <script src="https://kit.fontawesome.com/92a5784cc1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NAVIGATION MENU -->
+    <nav id="navbar">
+        <ul class="nav-links left-links"> <!-- Two classes were assigned to differentiate the left links and right links -->
+            <li><a href="Index.html" class="active-link">About</a></li> <!-- Active Link -->
+            <li><a href="Explore.html">Explore</a></li>
+            <li><a href="Meet.html">Meet</a></li>
+        </ul>
+        <div class="logo">
+            <a href="https://hyperbeard.com/game/adorable-home/"><img src="IMAGES/AH Nav.png" alt="Adorable Home Logo"></a>
+        </div>
+        <ul class="nav-links right-links">
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION ONE: Title Page -->
+    <section id="title_01">
+        <div id="hero">   
+            <div id="parallax-wrapper">
+                <div id="parallax-bg-1" data-speed="0.2"></div>
+                <div id="parallax-bg-2" data-speed="2"></div>
+                <div id="parallax-bg-3" data-speed="4"></div>
+                <div id="parallax-bg-4" data-speed="6"></div>  
+                <div id="parallax-bg-5" data-speed="10"></div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION TWO: Trailer and Download -->
+    <section class="trailer-download-section">
+        <div class="trailer-container">
+            <div class="caption">
+                <h2>Here's a sneak peek for you</h2>
+                <hr>
+                <p>Step into a world where you can adopt adorable pets, decorate your dream home, and create cherished memories with your loved ones!</p>
+            </div>
+            <iframe width="783" height="361" src="https://www.youtube.com/embed/9wdbxv465_k" title="Adorable Home - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="download-section">
+            <h3>Download Now</h3>
+            <div class="download-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.hyperbeard.adorablehome">
+                    <img src="IMAGES/Google Play Download.png" alt="Download 1">
+                </a>
+                <a href="https://apps.apple.com/us/app/adorable-home/id1486637414">
+                    <img src="IMAGES/App Store Download.png" alt="Download 2">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo-heading">
+                <img src="IMAGES/Logo.png" alt="Adorable Home Logo" class="footer-logo">
+            </div>
+            <div class="about-us">
+                <p class="about">HyperBeard, Mexico's largest mobile game developer, has over 200 million global downloads. Their inclusive and creative games offer fun, charming, and wholesome experiences for all players.</p>
+            </div>
+            <hr>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 HyperBeard Games. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- JS Script Sources -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script> <!--GSAP: a popular JS library for creating animations for the web-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> <!--LENIS-->
+  
+    <script src="Index.js"></script>
+</body>
+</html>
