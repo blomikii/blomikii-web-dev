@@ -28,7 +28,7 @@ window.onscroll = function() {
 
 // Learn More button
 document.addEventListener('DOMContentLoaded', (event) => {
-    const scrollButton = document.querySelector('.scroll-button');
+    const scrollButton = document.querySelector('.scroll-btn');
 
     scrollButton.addEventListener('click', (e) => {
         e.preventDefault();
