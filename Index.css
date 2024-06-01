@@ -93,12 +93,12 @@ body{
     filter: drop-shadow(2px 4px 3px rgb(255, 213, 108)); 
 }
 
-/* SECTION 01 */
+/* SECTION 01: TITLE PAGE */
 #title_01{
     height: 100dvh;
 }   
 
-/* PARALLAX BACKGROUND */
+/* Parallax Background */
 #hero{
     position: relative;
     height: 100dvh;
@@ -118,7 +118,8 @@ body{
     pointer-events: none;
 }
 
-div[id*=parallax-bg-]{ /* Targets the parallax images*/
+/* Targets the parallax images*/
+div[id*=parallax-bg-]{ 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -145,7 +146,7 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
 #parallax-bg-4{background-image: url(IMAGES/Parallax\ 4.png);}
 #parallax-bg-5{background-image: url(IMAGES/Parallax\ 5.png);}
 
-/* CALL TO */
+/* Call to action button */
 .action-btn{
     margin: 0 300px 0 300px;
     z-index: 1;
@@ -176,7 +177,7 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     background-color: #ffffff;
 }
 
-/* SECTION 02 */
+/* SECTION 02: TRAILER-DOWNLOAD */
 .trailer-section{
     padding: 60px 0;
     background: url(IMAGES/Paw\ Print\ BG.png);
@@ -334,30 +335,30 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     text-align: justify;
     line-height: 35px;
 
-    margin-right: 80px;
+    margin: -20px 80px 0 0;
     color: #3423A6;
 }
 
-/* Full Screen Section Styles */
-.full-screen-section {
+/* SECTION 04: USE LOVE */
+.use-love-section {
     display: flex;
     height: 100vh;
 }
 
-/* Left Half Styles */
-.left-half {
+/* Left Side */
+.left-side {
     flex: 1;
     overflow: hidden;
 }
 
-.left-half img {
+.left-side img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Right Half Styles */
-.right-half {
+/* Right Side */
+.right-side {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -386,6 +387,18 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     color: #1c6ad7;
 }
 
+/* Lower half of the right side */
+.subheading-container {
+    display: flex;
+    align-items: center;
+}
+
+.small-image {
+    width: 150px; 
+    height: auto;
+    margin: 30px 0 0 30px;
+}
+
 .sub-heading-2 {
     text-align: justify;
 
@@ -398,26 +411,15 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     color: #1c6ad7;
 }
 
+/* Use of <span> tag */
 .highlight{
     background-color: #fcfbb5;
     color: #DC6BAD;
     border-radius: 10px;
 }
 
-.subheading-container {
-    display: flex;
-    align-items: center;
-}
-
-.small-image {
-    width: 150px; 
-    height: auto;
-    margin: 30px 0 0 30px;
-}
-
-
-/* SECTION 03 */
-.features {
+/* SECTION 05: PET CARE */
+.pet-care-section {
     width: 100%;
     height: 100dvh;
 
@@ -429,7 +431,8 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     background: linear-gradient(0deg, rgba(230,243,255,1) 0%, rgba(230,243,255,1) 17%, rgba(230,243,255,1) 27%, rgba(230,243,255,1) 38%, rgba(255,255,255,1) 60%);
 }
 
-.text-container{
+/* Pet Care Headings */
+.headings{
     position: absolute;
     z-index: 5;
     text-align: center;
@@ -437,7 +440,7 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     margin-bottom: 80px; 
 }
 
-.text-container h3{
+.hedings h3{
     font-family: 'Pangolin', sans-serif;
     font-size: 1.5em;
     font-weight: 100;
@@ -446,7 +449,7 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     margin-bottom: 10px; 
 }
 
-.text-container h1{
+.headings h1{
     font-family: 'Gomarice', sans-serif;
     text-transform: uppercase;
     font-weight: 100;
@@ -454,6 +457,7 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     color: #3423A6;
 }
 
+/* Wrapper for the cards */
 .wrapper {
     display: flex;
     width: 100%;
@@ -476,10 +480,12 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     transition: 0.5s ease-in-out;
 }
 
+/* Hover animation for the card */
 .card:hover {
     transform: scale(1.05);
 }
 
+/* Card image */
 .card img {
     width: 100%;
     height: auto;
@@ -491,13 +497,14 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     left: 0;
 }
 
-.caption-info{
+/* Description for the cards */
+.card-info{
     position: relative;
     color: #FFFFFF;
     transform: translateY(30px);
 }
 
-.caption-info h1{
+.card-info h1{
     font-family: 'Gomarice', sans-serif;
     font-weight: 100;
     
@@ -506,7 +513,7 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     color: #1c6ad7;
 }
 
-.caption-info p{
+.card-info p{
     font-family: 'Pangolin', sans-serif;
     font-size: 1.2em;
     margin-bottom: 30px;
@@ -514,6 +521,12 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     text-align: justify;
     line-height: 25px;
     color: #BC3908;
+}
+
+/* SECTION 06: ENDING SECTION / MEET THE CATS */
+.ending-section{
+    height: 100vh;
+    background: url(IMAGES/Cats\ eating.png);
 }
 
 /* FOOTER */
