@@ -211,7 +211,7 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     max-width: 1200px;
     margin: 75px auto;
     border-radius: 35px;
-    background-color: #;
+    background-color: #FFFFFF;
 }
 
 .trailer-container{
@@ -296,14 +296,13 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
     text-transform: uppercase;
     font-weight: 100;
     font-size: 2.5em;
-    color: #ffffff;
-    text-shadow:  1px 1px 10px rgb(22, 0, 165);
+    color: #3423A6;
 }
 
 .wrapper {
     display: flex;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 140px;
     justify-content: space-around;
 }
 
@@ -339,8 +338,9 @@ div[id*=parallax-bg-]{ /* Targets the parallax images*/
 }
 
 .caption-info h1{
-    font-family: 'Cabin', sans-serif;
-    color: #3423A6;
+    font-family: 'Gomarice', sans-serif;
+    font-weight: 100;
+    color: #1c6ad7;
     margin-bottom: 20px;
     text-align: center;
 }

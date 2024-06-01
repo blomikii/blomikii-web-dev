@@ -23,6 +23,7 @@ body{
     padding: 0;
     background-image: url(IMAGES/Cats\ Peeking.png);
     background-color: #fffdf7;
+    object-fit: cover;
     background-repeat: no-repeat;
 }
 

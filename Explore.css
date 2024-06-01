@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&family=Outfit:wght@100..900&family=Pangolin&family=Righteous&family=Rubik+Bubbles&family=Tenor+Sans&display=swap');
 
 @font-face {
-    font-family: 'Star Cartoon';
-    src: url(FONTS/Star\ Cartoon.otf);
+    font-family: 'Gomarice';
+    src: url(FONTS/gomarice_gogono_cocoa_mochi.ttf);
 }
 
 /* Configuring browser settings */
@@ -162,7 +162,7 @@ body{
 }
 
 .banner h2 {
-    font-family: 'Star Cartoon', sans-serif;
+    font-family: 'Gomarice', sans-serif;
     font-size: 3em;
     font-weight: 100;
     color: #FFFFFF;

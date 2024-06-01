@@ -1,6 +1,11 @@
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&family=Outfit:wght@100..900&family=Pangolin&family=Righteous&family=Rubik+Bubbles&family=Tenor+Sans&display=swap');
 
+@font-face {
+    font-family: 'Gomarice';
+    src: url(FONTS/gomarice_gogono_cocoa_mochi.ttf);
+}
+
 /* Configuring browser settings */
 *{
     margin: 0;
@@ -11,7 +16,23 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(IMAGES/Paw\ Print\ BG.png);
+    --l: transparent 5px,
+		hsla(25, 100%, 94%, 0.304) 0 10px,
+		transparent 0 35px,
+		hsla(189, 100%, 92%, .5) 0 40px,
+		hsla(73, 53%, 97%, .5) 0 50px,
+		transparent 0 60px,
+		hsla(189, 100%, 92%, .5) 0 70px,
+		hsla(219, 100%, 84%, 0.231) 0 80px,
+		transparent 0 90px,
+		hsla(24, 100%, 94%, .5) 0 110px,
+		transparent 0;
+	background: 
+		repeating-linear-gradient(45deg,
+			var(--l) 120px, hsla(219, 83%, 89%, 0.436) 0 140px),
+		repeating-linear-gradient(135deg,
+			var(--l) 140px, hsla(219, 82%, 89%, 0.247) 0 160px) 
+		#F9FBF2
 }
 
 ::-webkit-scrollbar{
@@ -95,6 +116,106 @@ body{
     filter: drop-shadow(0.35rem 0.35rem 0.35rem rgb(255, 213, 108)); 
 }
 
+/* Section Styles */
+.characters-section {
+    padding: 40px 20px;
+    text-align: center;
+    height: 180vh;
+}
+
+.main-heading {
+    font-family: 'Gomarice', sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #3423A6;
+}
+
+.sub-heading {
+    font-family: 'Pangolin', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #BC3908;
+}
+
+/* Card Container */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styles */
+.maincontainer {
+    perspective: 1000px;
+}
+
+.thecard {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.maincontainer:hover .thecard {
+    transform: rotateY(180deg);
+}
+
+.thefront, .theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thefront {
+    background: url('IMAGES/Cats/Cat Box.png');
+    background-color: #FFFFFF;
+
+    background-size: cover;
+    color: #BC3908;
+}
+
+.theback {
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+
+}
+
+.thefront h1, .theback h1 {
+    margin-top: -230px;
+    font-family: 'Gomarice', sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    text-align: center;
+}
+
+.thefront p, .theback p {
+    margin-top: -210px;
+    font-family: 'Pangolin', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    text-align: center;
+}
 
 /* FOOTER */
 footer {

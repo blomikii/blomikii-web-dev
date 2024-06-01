@@ -25,3 +25,17 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 
 }
+
+// Set images
+document.addEventListener('DOMContentLoaded', () => {
+  const containers = document.querySelectorAll('.maincontainer');
+
+  containers.forEach(container => {
+      const bgImage = container.getAttribute('data-bg');
+      const theBack = container.querySelector('.theback');
+
+      if (bgImage) {
+          theBack.style.backgroundImage = `url('IMAGES/Cats/${bgImage}')`;
+      }
+  });
+});
