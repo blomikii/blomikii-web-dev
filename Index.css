@@ -105,7 +105,7 @@ body{
 /* Parallax Background */
 #hero{
     position: relative;
-    height: 100dvh;
+    height: 100vh;
     
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@ body{
 
 #parallax-wrapper{
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
 
     position: absolute;
     pointer-events: none;
@@ -138,13 +138,7 @@ div[id*=parallax-bg-]{
 }
 
 /* Setting the images for the parallax divs */
-#parallax-bg-1{
-    --s: 150px;
-    background:
-    linear-gradient(-135deg,#0000 18.75%,#e6f3ff 0 31.25%,#0000 0),
-    repeating-linear-gradient(-45deg,#e6f3ff -6.25% 6.25%,#F7F7FF 0 18.75%);
-    background-size: var(--s) var(--s);
-}
+#parallax-bg-1{background-image: url(IMAGES/Parallax\ 1.gif);}
 #parallax-bg-2{background-image: url(IMAGES/Parallax\ 2.png);}
 #parallax-bg-3{background-image: url(IMAGES/Parallax\ 3.png);}
 #parallax-bg-4{background-image: url(IMAGES/Parallax\ 4.png);}
@@ -182,12 +176,19 @@ div[id*=parallax-bg-]{
 }
 
 /* SECTION 02: TRAILER-DOWNLOAD */
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 35px;
+}
+
 .trailer-section{
     padding: 60px 0;
     background: url(IMAGES/Paw\ Print\ BG.png);
     height: 90dvh;
 }
 
+/* Heading */
 .trailer-section h1{
     font-family: 'Gomarice', sans-serif;
     font-size: 4em;
@@ -201,18 +202,11 @@ div[id*=parallax-bg-]{
     text-align: center;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 20px auto;
-    border-radius: 35px;
-}
-
 .trailer-container{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    overflow: hidden;     
 }
 
 /* VIDEO CONTAINERS */
@@ -310,6 +304,8 @@ div[id*=parallax-bg-]{
 /* SECTION 03: CHARACTERS-Humans */
 .characters-section{
     background: url(IMAGES/Character\ Select.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100dvh;
     
     display: flex;
@@ -320,7 +316,6 @@ div[id*=parallax-bg-]{
 .heading-container {
     display: flex;
     align-items: center;
-
     margin-top: -450px;
 }
 
@@ -365,9 +360,11 @@ div[id*=parallax-bg-]{
 /* Right Side */
 .right-side {
     flex: 1;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     padding: 20px;
     margin-top: 40px;
 }
@@ -376,7 +373,7 @@ div[id*=parallax-bg-]{
     font-family: 'Gomarice', sans-serif;
     font-size: 5em;
 
-    text-align: left;
+    text-align: justify;
     margin: 0 30px 20px 40px;
     color: #DC6BAD;
 }
@@ -466,9 +463,10 @@ div[id*=parallax-bg-]{
 /* Wrapper for the cards */
 .wrapper {
     display: flex;
+    justify-content: space-around;
+    
     width: 100%;
     margin-top: 140px;
-    justify-content: space-around;
 }
 
 .card {
@@ -532,6 +530,8 @@ div[id*=parallax-bg-]{
 /* SECTION 06: ENDING SECTION / MEET THE CATS */
 .ending-section {
     background: url(IMAGES/Cats\ eating.png);
+    background-repeat: none;
+    background-size: cover;
 
     display: flex;
     justify-content: center;
@@ -584,6 +584,7 @@ footer {
     padding: 0 20px;
 }
 
+/* FOOTER LOGO */
 .logo-heading {
     display: flex;
     flex-direction: column;
@@ -597,6 +598,7 @@ footer {
     margin-bottom: 10px;
 }
 
+/* ABOUT THE DEVELOPER */
 .about-us {
     margin-bottom: 20px;
 }

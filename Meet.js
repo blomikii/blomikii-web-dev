@@ -27,15 +27,18 @@ window.onscroll = function() {
 }
 
 // Set images
-document.addEventListener('DOMContentLoaded', () => {
-  const containers = document.querySelectorAll('.maincontainer');
+// Iterates through elements with the class "maincontainer"
+const containers = document.querySelectorAll('.maincontainer');
 
-  containers.forEach(container => {
-      const bgImage = container.getAttribute('data-bg');
-      const theBack = container.querySelector('.theback');
+containers.forEach(container => {
+    // Retrieves the value of the "data-bg" attribute
+    const bgImage = container.getAttribute('data-bg');
+    // Selects the element with the class "back"
+    const theBack = container.querySelector('.back');
 
-      if (bgImage) {
-          theBack.style.backgroundImage = `url('IMAGES/Cats/${bgImage}')`;
-      }
-  });
+    // If the "data-bg" attribute exists
+    if (bgImage) {
+        // Sets the background image of the "theback" element to the specified URL
+        theBack.style.backgroundImage = `url('IMAGES/Cats/${bgImage}')`;
+    }
 });

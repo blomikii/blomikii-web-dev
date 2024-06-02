@@ -26,29 +26,33 @@ window.onscroll = function() {
 
 }
 
-// Image Slider
-document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('image-modal');
-  const modalImg = document.getElementById('modal-image');
-  const closeBtn = document.getElementsByClassName('close')[0];
-  const images = document.querySelectorAll('.slide img');
+// Retrieves references to the following elements.
+const modal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-image');
+const closeBtn = document.getElementsByClassName('close')[0];
+const images = document.querySelectorAll('.slide img');
 
-  images.forEach(img => {
-      img.addEventListener('click', () => {
-          modal.style.display = "block";
-          modalImg.src = img.src;
-      });
-  });
-
-  closeBtn.addEventListener('click', () => {
-      modal.style.display = "none";
-  });
-
-  window.addEventListener('click', (e) => {
-      if (e.target === modal) {
-          modal.style.display = "none";
-      }
-  });
+// Iterates over each image in the slider
+images.forEach(img => {
+    // Adds a click event listener to each image
+    img.addEventListener('click', () => {
+        // When an image is clicked, it displays the modal
+        modal.style.display = "block";
+        modalImg.src = img.src;
+    });
 });
 
+// Adds a click event listener to the close button.
+closeBtn.addEventListener('click', () => {
+    // When the close button is clicked, it hides the modal
+    modal.style.display = "none";
+});
+
+// Adds a click event listener to the window.
+window.addEventListener('click', (e) => {
+    // If the click target is the modal itself, it hides the modal
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
 

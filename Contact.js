@@ -27,20 +27,22 @@ window.onscroll = function() {
 }
 
 // Contact Form Animation
+// Retrieves all the inputs
 const inputs = document.querySelectorAll('.input');
 
 function focusFunc() {
   let parent = this.parentNode;
-  parent.classList.add('focus');
+  parent.classList.add('focus'); // Takes the stylings of focus from the CSS and adds it to the focused input field
 }
 
 function blurFunc() {
   let parent = this.parentNode;
   if (this.value =='') {
-    parent.classList.remove('focus');
+    parent.classList.remove('focus'); // Removes the stylings
   }
 }
 
+// Loops through each input field
 inputs.forEach((input) => {
   input.addEventListener('focus', focusFunc);
   input.addEventListener('blur', blurFunc);
