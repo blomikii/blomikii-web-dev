@@ -240,7 +240,7 @@ div[id*=parallax-bg-]{
 
     text-align: center;
     margin: 0 40px 40px 40px;
-    color: #ce7c65;
+    color: #1c6ad7;
 }
 
 /* TRAILER DESCRIPTION */
@@ -254,7 +254,7 @@ div[id*=parallax-bg-]{
 }
 
 .caption-container hr{
-    border: 1px solid #BC3908;
+    border: 1px solid #DC6BAD;
     width: 80%;
 }
 
@@ -322,9 +322,10 @@ div[id*=parallax-bg-]{
 
 .main-heading {
     font-family: 'Gomarice', sans-serif;
-    font-size: 8em;
+    font-size: 6em;
+
     margin: 0 50px 0 80px;
-    color: #ce7c65;
+    color: #DC6BAD;
 }
 
 .sub-heading {
@@ -336,7 +337,7 @@ div[id*=parallax-bg-]{
     line-height: 35px;
 
     margin: -20px 80px 0 0;
-    color: #3423A6;
+    color: #F65F28;
 }
 
 /* SECTION 04: USE LOVE */
@@ -367,7 +368,8 @@ div[id*=parallax-bg-]{
     margin-top: 40px;
 }
 
-.main-heading {
+.main-heading-1 {
+    font-family: 'Gomarice', sans-serif;
     font-size: 5em;
 
     text-align: left;
@@ -408,7 +410,7 @@ div[id*=parallax-bg-]{
     
     line-height: 40px;
     margin: -40px 30px 0 40px;
-    color: #1c6ad7;
+    color: #F65F28;
 }
 
 /* Use of <span> tag */
@@ -445,7 +447,7 @@ div[id*=parallax-bg-]{
     font-size: 1.5em;
     font-weight: 100;
 
-    color: #BC3908;
+    color: #F65F28;
     margin-bottom: 10px; 
 }
 
@@ -454,7 +456,7 @@ div[id*=parallax-bg-]{
     text-transform: uppercase;
     font-weight: 100;
     font-size: 2.5em;
-    color: #3423A6;
+    color: #1c6ad7;
 }
 
 /* Wrapper for the cards */
@@ -510,7 +512,7 @@ div[id*=parallax-bg-]{
     
     margin-bottom: 20px;
     text-align: center;
-    color: #1c6ad7;
+    color: #DC6BAD;
 }
 
 .card-info p{
@@ -520,7 +522,7 @@ div[id*=parallax-bg-]{
 
     text-align: justify;
     line-height: 25px;
-    color: #BC3908;
+    color: #F65F28;
 }
 
 /* SECTION 06: ENDING SECTION / MEET THE CATS */
@@ -560,7 +562,7 @@ div[id*=parallax-bg-]{
 
     text-align: center;
     margin: 0 250px 40px 250px;
-    color: #BC3908;
+    color: #F65F28;
 }
 
 /* FOOTER */
