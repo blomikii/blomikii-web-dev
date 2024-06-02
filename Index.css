@@ -33,6 +33,7 @@ body{
     position: fixed;
     top: 0;
 
+    /* Centers the contents vertically and spaces them out horizontally */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,20 +42,18 @@ body{
     
     width: 100%;
     padding: 10px 20px;
-    z-index: 2000;
-    transition: top 0.3s;
+    z-index: 2000; /* Ensures that the navbar remains above other elements */
+    transition: top 0.3s;  /* Is integrated in a JS code */
 }
 
+/* Targets the content inside the unordered list */
 .nav-links{
     text-transform: uppercase;
     list-style: none;
     display: flex;
 }
 
-.nav-links .logo{
-    justify-content: flex-start;
-}
-
+/* List item styling */
 .nav-links li{
     font-family: 'Pangolin', sans-serif;
     margin: 0 15px;
@@ -64,6 +63,7 @@ body{
     color: #0E1C36;
 }
 
+/* Link styling */
 .nav-links a{
     display: inline-block;
 
@@ -73,22 +73,26 @@ body{
     transition: color 0.3s, transform 0.3s;
 }
 
+/* Hover animation on the links */
 .nav-links a:hover{
     color: #3423A6;
     transform: translateY(-5px);
 }
 
+/* Targets the logo container */
 .logo{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
+/* Targets the image inside the logo division */
 .logo img{
     height: 25px; 
     transition: filter 0.3s;
 }
 
+/* Hover animation on the logo image */
 .logo img:hover{
     filter: drop-shadow(2px 4px 3px rgb(255, 213, 108)); 
 }
