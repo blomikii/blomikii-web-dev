@@ -94,8 +94,8 @@ body{
 }
 
 /* SECTION 01: TITLE PAGE */
-#title_01{
-    height: 100dvh;
+#title-section{
+    height: 100vh;
 }   
 
 /* Parallax Background */
@@ -524,9 +524,43 @@ div[id*=parallax-bg-]{
 }
 
 /* SECTION 06: ENDING SECTION / MEET THE CATS */
-.ending-section{
-    height: 100vh;
+.ending-section {
     background: url(IMAGES/Cats\ eating.png);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh; /* Full viewport height */
+}
+
+.text-container {
+    text-align: center;
+}
+
+/* Heading */
+.farewell {
+    font-family: 'Gomarice', sans-serif;
+    font-size: 4em;
+
+    text-align: center;
+    margin: -250px 0 40px 0;
+    color: #007bff;
+}
+
+.love-highlight{
+    color: #DC6BAD;
+}
+
+/* Sub-heading */
+.farewell-sub {
+    font-family: 'Pangolin', sans-serif;
+    font-size: 1.8em;
+    font-weight: 100;
+
+    text-align: center;
+    margin: 0 250px 40px 250px;
+    color: #BC3908;
 }
 
 /* FOOTER */
