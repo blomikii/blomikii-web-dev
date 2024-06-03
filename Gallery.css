@@ -15,6 +15,7 @@ body{
     background-color: #FFFFFF;
 }
 
+/* CUSTOM SCROLLBAR */
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -90,7 +91,7 @@ body{
     filter: drop-shadow(2px 4px 3px rgb(255, 213, 108)); 
 }
 
-/* GALLERY */
+/* SECTION 01: GALLERY */
 .gallery-1{
     display: flex;
     flex-direction: column;
@@ -215,9 +216,10 @@ body{
 /* FOOTER */
 footer {
     background-color: #BC3908;
+    color: #3423A6;
+
     padding: 40px 0;
     text-align: center;
-    color: #3423A6;
 }
 
 .footer-container {
@@ -226,19 +228,22 @@ footer {
     padding: 0 20px;
 }
 
+/* FOOTER LOGO */
 .logo-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin-bottom: 20px;
 }
 
+/* Footer Image */
 .footer-logo {
-    width: 100px; /* Adjust size as needed */
+    width: 100px;
     margin-bottom: 10px;
 }
 
-
+/* ABOUT THE DEVELOPER */
 .about-us {
     margin-bottom: 20px;
 }
@@ -247,32 +252,38 @@ footer {
     font-family: 'Pangolin', sans-serif;
     font-size: 1em;
     font-weight: 100;
+
     color: #FFFFFF;
     margin: 0 auto;
     max-width: 700px;
 }
 
+/* Separator */
 hr {
     border: 0;
     height: 1px;
-    background: #ffffff;
+    width: 100%;
     margin: 20px auto;
-    width: 80%;
+    
+    background: #ffffff;  
 }
 
+/* SOCIALS */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    
     margin-bottom: 20px;
+    gap: 20px;
 }
 
 .social-icons a {
-    color: #ffffff;
     font-size: 1.5em;
+    color: #ffffff;
     transition: color 0.3s;
 }
 
+/* HOVER ANIMATION ON THE ICONS */
 .social-icons a:hover {
     color: #00ffd5;
 }

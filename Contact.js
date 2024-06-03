@@ -27,7 +27,6 @@ window.onscroll = function() { // Triggers the function when scroll is detected
 }
 
 // CONTACT FORM - INPUT FIELDS ANIMATION
-
 const inputs = document.querySelectorAll('.input'); // Retrieves all the elements with an input class
 
 // Function for when an input field is selected
@@ -36,7 +35,7 @@ function focusFunc() {
   parent.classList.add('focus'); // Takes the stylings of focus from the CSS and adds it to the focused input field
 }
 
-// Function for when 
+// Function for when an input field is exited
 function blurFunc() {
   let parent = this.parentNode;
   if (this.value =='') {
