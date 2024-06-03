@@ -501,13 +501,13 @@ div[id*=parallax-bg-]{
     left: 0;
 }
 
-/* Description for the cards */
 .card-info{
     position: relative;
     color: #FFFFFF;
     transform: translateY(30px);
 }
 
+/* Card Heading */
 .card-info h1{
     font-family: 'Gomarice', sans-serif;
     font-weight: 100;
@@ -517,6 +517,7 @@ div[id*=parallax-bg-]{
     color: #DC6BAD;
 }
 
+/* Card Description */
 .card-info p{
     font-family: 'Pangolin', sans-serif;
     font-size: 1.2em;
@@ -593,6 +594,7 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Footer Image */
 .footer-logo {
     width: 100px;
     margin-bottom: 10px;
@@ -613,6 +615,7 @@ footer {
     max-width: 700px;
 }
 
+/* Separator */
 hr {
     border: 0;
     height: 1px;

@@ -1,4 +1,4 @@
-// Smooth Scroll Effect using GSAP and Lenis
+// SMOOTH SCROLL USING GSAP AND LENIS
 const lenis = new Lenis() // Create an instance of Lenis
 
 lenis.on('scroll', (e) => { // Adds an event listener
@@ -13,7 +13,7 @@ gsap.ticker.add((time)=>{ // Updates Lenis for each frame of animation
 
 gsap.ticker.lagSmoothing(0) // Sets the lag smoothing of GSAP's ticker to 0
 
-// Hide Navbar On Scroll
+// HIDE NAVBAR ONSCROLL
 var prevScrollpos = window.pageYOffset; // Assigning variables
 window.onscroll = function() { // Triggers the function when scroll is detected
   var currentScrollPos = window.pageYOffset;
@@ -26,7 +26,7 @@ window.onscroll = function() { // Triggers the function when scroll is detected
 
 }
 
-// Learn More Button
+// LEARN MORE BUTTON
 const scrollButton = document.querySelector('.scroll-btn'); // Retrieves the element with a .scroll-btn class
 
 scrollButton.addEventListener('click', (e) => {
@@ -34,7 +34,7 @@ scrollButton.addEventListener('click', (e) => {
     gsap.to(window, {duration: 1, scrollTo: "#section02"}); // Smooth animation using GSAP
 });
 
-// Parallax Effect
+// PARALLAX EFFECT
 const parallaxWrapper = document.querySelector('#parallax-wrapper') // Retrieves the parallax-wrapper ID
 const parallaxBG = document.querySelectorAll('div[id*=parallax-bg-') // Retrieves all div elements that start with the ID
 

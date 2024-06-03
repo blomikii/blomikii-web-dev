@@ -1,4 +1,4 @@
-// Smooth Scroll Effect using GSAP and Lenis
+/// SMOOTH SCROLL USING GSAP AND LENIS
 const lenis = new Lenis() // Create an instance of Lenis
 
 lenis.on('scroll', (e) => { // Adds an event listener
@@ -13,7 +13,7 @@ gsap.ticker.add((time)=>{ // Updates Lenis for each frame of animation
 
 gsap.ticker.lagSmoothing(0) // Sets the lag smoothing of GSAP's ticker to 0
 
-// Hide Navbar On Scroll
+// HIDE NAVBAR ONSCROLL
 var prevScrollpos = window.pageYOffset; // Assigning variables
 window.onscroll = function() { // Triggers the function when scroll is detected
   var currentScrollPos = window.pageYOffset;
@@ -26,7 +26,7 @@ window.onscroll = function() { // Triggers the function when scroll is detected
 
 }
 
-// Background Slider
+// BACKGROUND SLIDER
 const menuBtn = document.querySelectorAll('.bg-btn'); // Retrieve elements with .bg-btn class
 const bgSlider = document.querySelectorAll('.slide-img'); // Retrieve all elements with .slide-img class
 const slidCon = document.querySelectorAll('.captions'); // Retrieve all elements with .captions class

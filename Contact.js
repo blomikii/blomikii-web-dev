@@ -1,4 +1,4 @@
-// Smooth Scroll Effect using GSAP and Lenis
+// SMOOTH SCROLL USING GSAP AND LENIS
 const lenis = new Lenis() // Create an instance of Lenis
 
 lenis.on('scroll', (e) => { // Adds an event listener
@@ -13,28 +13,30 @@ gsap.ticker.add((time)=>{ // Updates Lenis for each frame of animation
 
 gsap.ticker.lagSmoothing(0) // Sets the lag smoothing of GSAP's ticker to 0
 
-// Hide Navbar On Scroll
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+// HIDE NAVBAR ONSCROLL
+var prevScrollpos = window.pageYOffset; // Assigning variables
+window.onscroll = function() { // Triggers the function when scroll is detected
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
+  if (prevScrollpos > currentScrollPos) { // If you scroll up 
+    document.getElementById("navbar").style.top = "0"; // The navbar is show
+  } else { // If you scroll down
+    document.getElementById("navbar").style.top = "-50px"; // The navbar is hidden
   }
-  prevScrollpos = currentScrollPos;
+  prevScrollpos = currentScrollPos; // Updates the scroll position for the next scroll event
 
 }
 
-// Contact Form Animation
-// Retrieves all the inputs
-const inputs = document.querySelectorAll('.input');
+// CONTACT FORM - INPUT FIELDS ANIMATION
 
+const inputs = document.querySelectorAll('.input'); // Retrieves all the elements with an input class
+
+// Function for when an input field is selected
 function focusFunc() {
   let parent = this.parentNode;
   parent.classList.add('focus'); // Takes the stylings of focus from the CSS and adds it to the focused input field
 }
 
+// Function for when 
 function blurFunc() {
   let parent = this.parentNode;
   if (this.value =='') {
